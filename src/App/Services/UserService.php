@@ -21,7 +21,7 @@ class UserService
         )->count();
 
         if ($emailCount > 0) {
-            throw new ValidationException(['email' => 'Email taken']);
+            throw new ValidationException(['email' => ['ایمیل تکراری است']]);
         }
     }
     public function create(array $formData)
@@ -57,7 +57,7 @@ class UserService
         );
 
         if (!$user || !$passwordsMatch) {
-            throw new ValidationException(['password' => ['Invalid credentials']]);
+            throw new ValidationException(['password' => ['لطفا یک ایمیل و رمز عبور معتبر وارد کنید']]);
         }
 
         session_regenerate_id();

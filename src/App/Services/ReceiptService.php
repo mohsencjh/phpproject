@@ -16,7 +16,7 @@ class ReceiptService
     {
         if (!$file || $file['error'] !== UPLOAD_ERR_OK) {
             throw new ValidationException([
-                'receipt' => ['Failed to upload file']
+                'receipt' => ['آپلود فایل با خطا مواجه شد']
             ]);
         }
 
@@ -24,7 +24,7 @@ class ReceiptService
 
         if ($file['size'] > $maxFileSizeMB) {
             throw new ValidationException([
-                'receipt' => ['File upload is too large']
+                'receipt' => ['فایل آپلود شده بیشتر از 3 مگابایت میباشد']
             ]);
         }
 
@@ -32,7 +32,7 @@ class ReceiptService
 
         if (!preg_match('/^[A-za-z0-9\s._-]+$/', $originalFileName)) {
             throw new ValidationException([
-                'receipt' => ['Invalid filename']
+                'receipt' => ['از کاراکتر ها در اسم فایل استفاده نکنید']
             ]);
         }
 
@@ -41,7 +41,7 @@ class ReceiptService
 
         if (!in_array($clientMimeType, $allowedMimeTypes)) {
             throw new ValidationException([
-                'receipt' => ['Invalid file type']
+                'receipt' => ['فرمت فایل قابل قبول نیست']
             ]);
         }
     }
