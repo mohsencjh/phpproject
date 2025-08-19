@@ -42,7 +42,7 @@
                 <th class="p-4 text-left text-sm font-semibold text-gray-900">
                     تاریخ
                 </th>
-                <th>اقدامات</th>
+                <th class="actions">اقدامات</th>
             </tr>
         </thead>
 

@@ -66,3 +66,8 @@ button svg, a svg {
   direction: ltr;
   unicode-bidi: plaintext; 
 }
+
+th.actions {
+  text-align: center;
+}
+
