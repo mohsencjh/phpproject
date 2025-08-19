@@ -12,7 +12,7 @@ class TemplateDataMiddleware implements MiddlewareInterface
     public function __construct(private TemplateEngine $view) {}
     public function process(callable $next)
     {
-        $this->view->addGlobal('title', 'Expense Tracking App');
+        $this->view->addGlobal('title', 'اپلیکیشن ردیابی هزینه‌ها');
 
         $next();
     }

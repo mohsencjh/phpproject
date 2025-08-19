@@ -59,7 +59,7 @@ class TransactionController
 
         $this->transactionService->update($_POST, $transaction['id']);
 
-        redirectTo($_SERVER['HTTP_REFERER']);
+        redirectTo('/');
     }
 
     public function delete(array $params)
