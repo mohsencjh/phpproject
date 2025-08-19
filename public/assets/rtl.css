@@ -1,0 +1,68 @@
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: Vazir, Tahoma, sans-serif;
+}
+
+
+nav, header, .flex {
+  flex-direction: row-reverse;
+}
+
+
+.ltr {
+  direction: ltr;
+  flex-direction: row !important;
+}
+
+
+.text-left {
+  text-align: right !important;
+}
+.text-right {
+  text-align: left !important;
+}
+
+
+input, textarea, select {
+  text-align: right;
+  direction: rtl;
+}
+
+
+ul, ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+
+button svg, a svg {
+  margin-left: 0.25rem;
+  margin-right: 0;
+}
+[class*="ml-"] {
+  margin-right: inherit !important;
+  margin-left: 0 !important;
+}
+
+[class*="mr-"] {
+  margin-left: inherit !important;
+  margin-right: 0 !important;
+}
+
+[class*="pl-"] {
+  padding-right: inherit !important;
+  padding-left: 0 !important;
+}
+
+[class*="pr-"] {
+  padding-left: inherit !important;
+  padding-right: 0 !important;
+}
+
+
+.pagination-numbers {
+  direction: ltr;
+  unicode-bidi: plaintext; 
+}

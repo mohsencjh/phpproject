@@ -20,6 +20,6 @@ class MinRule implements RuleInterface
     }
     public function getMessage(array $data, string $field, array $params): string
     {
-        return "Must be at least {$params[0]}";
+        return "شما حداقل باید {$params[0]} ساله باشید";
     }
 }

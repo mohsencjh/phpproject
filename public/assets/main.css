@@ -25,6 +25,9 @@ html {
 body {
   margin: 0;
   line-height: inherit;
+  direction: rtl;
+  text-align: right;
+
 }
 hr {
   height: 0;

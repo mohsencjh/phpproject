@@ -21,6 +21,6 @@ class LengthMaxRule implements RuleInterface
 
     public function getMessage(array $data, string $field, array $params): string
     {
-        return "Exceeds maximum character limit of {$params[0]} characters";
+        return "حداکثر تعداد کاراکتر مجاز {$params[0]} است";
     }
 }
