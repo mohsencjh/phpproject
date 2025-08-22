@@ -55,7 +55,7 @@ class ReceiptService
 
         if (!move_uploaded_file($file['tmp_name'], $uploadPath)) {
             throw new ValidationException([
-                'receipt' => ['Failed to upload file']
+                'receipt' => ['آپلود فایل با خطا مواجه شد']
             ]);
         }
 
